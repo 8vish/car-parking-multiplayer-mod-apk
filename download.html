@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Download Traffic Rider Mod APK</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!--====== Bootstrap CSS ======-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+    <!--====== HEADER PART START ======-->
+
+    <header class="header_area">
+      <div id="header_navbar" class="header_navbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                  <img id="logo" src="/assets/images/logo.svg" alt="Logo" />
+               </a>
+              </nav>
+              <!-- navbar -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- header navbar -->
+    </header>
+ 
+    <!--====== HEADER PART ENDS ======-->
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card p-4">
+      <div class="card-body text-center">
+        <h1 class="card-title">Download Traffic Rider Mod APK</h1>
+        <p class="card-text">Experience the ultimate thrill of Traffic Rider with unlimited money and exciting features! Unlock all bikes, customize your rider, and enjoy an ad-free gaming experience.</p>
+        <div class="hero-btns">
+          <button onclick="startDownload()" class="main-btn btn-hover wow fadeInUp btn-primery"
+                  data-wow-delay=".45s">Download Now</button>
+          <p id="timer" class="mt-2"></p>
+          <p id="status" class="mt-2"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    button {
+      background-color: blue;
+    }
+  </style>
+
+  <!--====== Bootstrap js ======-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha512-VK2zcvntEufaimc+efOYi622VN5ZacdnufnmX7zIhCPmjhKnOi9ZDMtg1/ug5l183f19gG1/cBstPO4D8N/Img==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    function startDownload() {
+      var button = document.querySelector('.main-btn'); // Update the selector to target the button correctly
+      var timer = document.querySelector('#timer');
+      var status = document.querySelector('#status');
+
+      button.disabled = true;
+      button.textContent = "Downloading...";
+      status.textContent = "";
+
+      var count = 5;
+      var interval = setInterval(function() {
+        timer.textContent = "Starting download in " + count + " seconds...";
+        count--;
+        if (count < 0) {
+          clearInterval(interval);
+          timer.textContent = "";
+          initiateDownload();
+        }
+      }, 1000);
+    }
+
+    function initiateDownload() {
+      // Encoded download link
+      var encodedUrl = "aHR0cHM6Ly9maWxlcy5hcGttb2RnZXQuY29tL2dhbWVzL3RyYWZmaWMtcmlkZXItbW9kXzEuOTUtYXBrbW9kZ2V0LmNvbS5hcGs=";
+
+      // Decode the URL
+      var decodedUrl = atob(encodedUrl);
+
+      // Create an invisible link and trigger the download
+      var link = document.createElement("a");
+      link.style.display = "none";
+      link.href = decodedUrl;
+      link.download = "traffic-rider-mod.apk";
+      document.body.appendChild(link);
+
+      setTimeout(function() {
+        link.click();
+        document.body.removeChild(link);
+        var button = document.querySelector('.main-btn'); // Update the selector to target the button correctly
+        button.disabled = false;
+        button.textContent = "Download Again";
+        var status = document.querySelector('#status');
+        status.textContent = "The download has completed. You can download again if needed.";
+      }, 2000); // Change the timeout to 2000ms (2 seconds) or 3000ms (3 seconds)
+    }
+  </script>
+</body>
+</html>
