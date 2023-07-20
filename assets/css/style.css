@@ -128,7 +128,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+ /*
 .gradient-1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#4354e2), to(#6ca3f3));
   background-image: linear-gradient(#4354e2 0%, #6ca3f3 100%);
@@ -137,7 +137,7 @@ p {
 
 
 .feature-content p {
-  margin-bottom: 1.5rem; /* Adjust the value as per your desired margin */
+  margin-bottom: 1.5rem;
 }
 
 .gradient-2 {
@@ -157,6 +157,70 @@ p {
   background-image: linear-gradient(#a866d1 0%, #f9a4d7 100%);
   color: #fff;
 }
+
+
+.gradient-5 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7941e), to(#fdd945));
+  background-image: linear-gradient(#f7941e 0%, #fdd945 100%);
+  color: #fff;
+}
+
+.gradient-6 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3f3f3f), to(#787878));
+  background-image: linear-gradient(#3f3f3f 0%, #787878 100%);
+  color: #fff;
+}
+
+.gradient-7 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff3e3e), to(#ff8484));
+  background-image: linear-gradient(#ff3e3e 0%, #ff8484 100%);
+  color: #fff;
+}
+ */
+ 
+.gradient-1 {
+    background-image: linear-gradient(to bottom, #4354e2, #6ca3f3);
+    color: #fff;
+  }
+  
+  .feature-content p {
+    margin-bottom: 1.5rem;
+    /* Adjust the value as per your desired margin */
+  }
+  
+  .gradient-2 {
+    background-image: linear-gradient(to bottom, #dc4985, #f18da2);
+    color: #fff;
+  }
+  
+  .gradient-3 {
+    background-image: linear-gradient(to bottom, #2cc590, #75eb92);
+    color: #fff;
+  }
+  
+  .gradient-4 {
+    background-image: linear-gradient(to bottom, #a866d1, #f9a4d7);
+    color: #fff;
+  }
+  
+  .gradient-5 {
+    background-image: linear-gradient(to bottom, #f7941e, #fdd945);
+    color: #fff;
+  }
+  
+  .gradient-6 {
+    background-image: linear-gradient(to bottom, #3f3f3f, #787878);
+    color: #fff;
+  }
+  
+  .gradient-7 {
+    background-image: linear-gradient(to bottom, #ff3e3e, #ff8484);
+    color: #fff;
+  }
+  
+  img {
+    margin-bottom: 15px;
+  }
 
 input,
 textarea {
